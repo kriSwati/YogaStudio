@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        body{
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(rgb(0, 238, 255),rgb(143, 8, 206));
+        }
+        h1{
+            text-align: center;
+            color: blue;
+            font-weight: bold;
+            font-size: 50px;
+        }
+    /*contact{
+        border: 2px solid red;
+        position: relative;
+        padding: 50px 100px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }*/
+    .container{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .container .info{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .info .box{
+        position: relative;
+        padding: 10px 0;
+        display: flex;
+    }
+    .container .info .box .icon{
+        font-size: 25px;
+        height: 40px;
+        width: 40px;
+        color:black;
+        background:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-top: 12px;
+        cursor: pointer;
+    }
+    .container .info .box .text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        color: white;
+    }
+    .container .info .box .text h3{
+        color: rgb(239, 243, 12);
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .form{
+        width: 25%;
+        padding: 40px;
+        background: rgb(33, 226, 233);
+    }
+    .form h2{
+        font-size: 30px;
+        color: rgb(239, 243, 12);
+        font-weight: 500;
+    }
+    .form .input-box{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .form .input-box input,
+    .form .input-box textarea
+    {
+        width: 100%;
+        padding: 5px 0;
+        margin: 10px 0;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        resize: none;
+    }
+    .form .input-box label{
+        padding: 5px 0;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    .form .input-box button{
+        cursor: pointer;
+        background: rgb(37, 103, 226);
+        color: cornsilk;
+        font-size: 20px;
+        padding: 10px;
+    }
+    @media (max-width:991px)
+    {
+        .contact{
+            padding: 50px;
+        }
+        .container{
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <hr>
+    <section class="contact"> 
+<div class="container">
+    <div class="info">
+        <div class="box">
+            <div class="icon"><i class="fa fa-map-marker"></i></div>
+            <div class="text">
+                <h3>Studio Address</h3>
+                <p>Beyond Yoga Fitness <br>
+                    199 Kalyan Vihar<br>Delhi -110009, India</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icon"><i class="fa fa-phone"></i></div>
+            <div class="text">
+                <h3>Phone</h3>
+                <p>0123456789</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icon"><i class="fa fa-envelope"></i></div>
+            <div class="text">
+                <h3>Email</h3>
+                <p>yogastudio@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <form>
+            <h2>Send Message</h2>
+            <div class="input-box">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name"></div>
+    
+            <div class="input-box">
+            <label>Phone</label>
+            <input type="text" placeholder="Enter your phone no."></div>
+            
+            <div class="input-box">
+            <label>Email</label>
+            <input type="text" placeholder="Enter your full email"></div>
+
+            <div class="input-box">
+            <label>Message</label>
+            <textarea placeholder="your message....."></textarea></div>
+            
+            <div class="input-box">
+                <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+</section>
+</body>
+</html>
