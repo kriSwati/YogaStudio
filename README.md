@@ -1,1 +1,1 @@
-# YogaSyudio
+# YogaStudio
